@@ -2,3 +2,7 @@
     width: 100%;
     background-color: #2b2d2f;
 }
+
+.color li a {
+    color: rgb(255, 255, 255);
+}
