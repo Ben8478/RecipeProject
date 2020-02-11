@@ -6,3 +6,17 @@
 .color li a {
     color: rgb(255, 255, 255);
 }
+
+.ingredients_list {
+    width: 30%;
+    border: 3px solid red;
+    display: inline-block;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-right: 1%;
+}
+
+.table {
+    width: 30%;
+    border: 3px solid orange;
+}
