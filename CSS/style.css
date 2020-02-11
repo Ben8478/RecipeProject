@@ -9,14 +9,38 @@
 
 .ingredients_list {
     width: 30%;
-    border: 3px solid red;
+    border: 1px solid grey;
     display: inline-block;
     padding-top: 1%;
     padding-bottom: 1%;
     padding-right: 1%;
+    vertical-align: auto;
+    margin: 0 auto;
+    text-align: top;
+    border-radius: 5%;
+    ;
+}
+
+.steps_list {
+    border: 1px grey solid;
+    display: inline-block;
+    width: 60%;
+    vertical-align: top;
+    border-radius: 5%;
 }
 
 .table {
     width: 30%;
-    border: 3px solid orange;
+    border: 1px solid grey;
+    display: inline-block;
+    border-radius: 5%;
+}
+
+.facts {
+    width: 30%;
+    border: 1px grey solid;
+    border-radius: 5%;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 1%;
 }
