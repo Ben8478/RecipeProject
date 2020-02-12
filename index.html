@@ -5,6 +5,7 @@
     <title>Quick and Easy Quesadillas</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Flamenco&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="CSS/style.css">
 </head>
@@ -21,16 +22,16 @@
             </li>
         </ul>
     </div>
-    <div class="jumbotron jumbotron-fluid">
-        <div class="container">
+    <div class="jumbotron jumbotron-fluid b-image">
+        <div class="container colorJumbo">
             <h1 class="display-4">Quick and easy Quesadillas</h1>
-            <p class="lead">How to create delicious dishes in a dash</p>
+            <p class="lead">How to create a delicious dish in a dash</p>
         </div>
     </div>
     <div class="ingredients_list">
         <ul>
             <h4>Ingredients</h4>
-            <li>2Tbsp olive oil, plus extra for brushing</li>
+            <span class="list_items"> <li>2Tbsp olive oil, plus extra for brushing</li>
             <li>1 onion , peeled and diced</li>
             <li>2 garlic cloves peeled and crushed</li>
             <li> 500g minced beef</li>
@@ -42,7 +43,8 @@
             <li>80g pickled jalapeno chillies</li>
             <li> 4 x 25cm tortillas</li>
             <li> Sea salk and freshly ground black pepper</li>
-            <li>Sour Cream</li>
+            <li>Sour Cream</li></span>
+            <button onclick="view_i" id="view">CLick to view</button>
         </ul>
     </div>
     <div class="steps_list">
@@ -79,5 +81,20 @@
         <p>Intereting facts on quesadillas</p>
     </div>
 </body>
+<script type='text/javascript'>
+    var x = 0
+
+    function view_i() {
+        if (x = 0) {
+            document.getElementById('list_items').style.display = "inline";
+            document.getElementById('view').innerHTML = "Click to close";
+            x = 1;
+        } else {
+            document.getElementById('list_items').style.display = 'none';
+            document.getElementById('view');
+            x = 0;
+        }
+    }
+</script>
 
 </html>
