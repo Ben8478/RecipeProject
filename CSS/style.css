@@ -4,7 +4,7 @@
 }
 
 .color li a {
-    color: rgb(255, 255, 255);
+    color: #E2DCCD;
 }
 
 .b-image {
@@ -16,6 +16,8 @@
     font-family: 'Flamenco', cursive;
 }
 
+
+}
 .ingredients_list {
     width: 30%;
     display: inline-block;
@@ -25,31 +27,29 @@
     vertical-align: auto;
     margin: 0 auto;
     text-align: top;
-    border-radius: 5%;
-    ;
 }
-
-.list_items li {
-   
-}
-
 .steps_list {
     display: inline-block;
     width: 60%;
     vertical-align: top;
-    border-radius: 5%;
 }
-
 .table {
-    width: 30%;
+    width: 60%;
     display: inline-block;
-    border-radius: 5%;
 }
-
+.gram {
+    font-weight: bold;
+    color: #152238;
+}
 .facts {
     width: 30%;
-    border-radius: 5%;
     display: inline-block;
     vertical-align: top;
     margin-top: 1%;
+}
+.footer {
+    text-align: center;
+}
+footer ul li {
+    list-style-type: none;
 }
