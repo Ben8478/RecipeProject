@@ -29,8 +29,8 @@
     ;
 }
 
-.list_items {
-    display: none;
+.list_items li {
+   
 }
 
 .steps_list {
