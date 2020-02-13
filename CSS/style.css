@@ -4,16 +4,20 @@
 }
 
 .color li a {
-    color: #E2DCCD;
+    color: #152238;
 }
 
 .b-image {
+    /* background-color: #152238; */
     background-image: url('../Images/food.jpg');
+    background-size: cover;
+    opacity: 95%;
 }
 
 .colorJumbo {
-    color: #E2DCCD;
+    color: #152238;
     font-family: 'Rye', cursive;
+    text-align: center;
 }
 
 
