@@ -4,11 +4,10 @@
 }
 
 .color li a {
-    color: #152238;
+    color: rgb(255, 255, 255);
 }
 
 .b-image {
-    /* background-color: #152238; */
     background-image: url('../Images/food.jpg');
     background-size: cover;
     opacity: 95%;
@@ -41,6 +40,9 @@
     vertical-align: top;
     font-family: 'Flamenco', cursive;
 }
+#more {
+    display: none;
+}
 .table {
     width: 60%;
     display: inline-block;
@@ -49,9 +51,11 @@
     font-weight: bold;
     color: #152238;
 }
-footer ul li {
+.footer ul {
+    text-align: center;
+}
+.footer ul li {
     list-style-type: none;
     display: inline-block;
     font-family: 'Flamenco', cursive;
-    text-align: center;
 }

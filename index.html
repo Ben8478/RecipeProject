@@ -30,38 +30,50 @@
             </div>
         </div>
     </div>
-    <div class="ingredients_list">
-        <ul>
-            <h4>Ingredients</h4>
-            <li>2Tbsp olive oil, plus extra for brushing</li>
-            <li>1 onion , peeled and diced</li>
-            <li>2 garlic cloves peeled and crushed</li>
-            <li> 500g minced beef</li>
-            <li> 2 tsp paprika</li>
-            <li>1 x 400g tin of chopped tamatoes</li>
-            <li>1 x400g tin of kidney beans,drained and rinsed</li>
-            <li> 200g mixture of grated mozzerella and cheddar cheese</li>
-            <li>4 spring onions trimmed and sliced</li>
-            <li>80g pickled jalapeno chillies</li>
-            <li> 4 x 25cm tortillas</li>
-            <li> Sea salk and freshly ground black pepper</li>
-            <li>Sour Cream</li>
-        </ul>
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-lg-6 col-md-12">
+                <h3 class="py-2">Ingredients</h3>
+                <div class="ingredients_list">
+                    <ul>
+                        <li>2Tbsp olive oil, plus extra for brushing</li>
+                        <li>1 onion , peeled and diced</li>
+                        <li>2 garlic cloves peeled and crushed</li>
+                        <li> 500g minced beef</li>
+                        <li> 2 tsp paprika</li>
+                        <li>1 x 400g tin of chopped tamatoes</li>
+                        <li>1 x400g tin of kidney beans,drained and rinsed</li>
+                        <li> 200g mixture of grated mozzerella and cheddar cheese</li>
+                        <li>4 spring onions trimmed and sliced</li>
+                        <li>80g pickled jalapeno chillies</li>
+                        <li> 4 x 25cm tortillas</li>
+                        <li> Sea salk and freshly ground black pepper</li>
+                        <li>Sour Cream</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-12 ">
+                <h3 class="py-2">Steps</h3>
+                <div class="steps_list">
+                    <p> 1. Preheat the oven to 220 degrees celsius and line two large baking trays with baking paper.<br> Place a large, non-stick frying pan over a high heat.Add the oil and onion and cook for 2-3 minutes, or until the onion has softened.
+                        Add the garlic and cook for 2 minutes., then crumble in the minced beef . <br> Cook over a high heat for 4-5 minutes. Or until mince is lightly browned. Stir in the spices and cook for 1-2 minutes. Add the tinned tamatoes , cook
+                        for 2 minutes, then remove from the heat. Stir in the kidney beans and season to taste.<br>
+                        <span id="more">
+                        Lightly brush one side of the tortilla with extra olive oil and place on a prepared tray, oiled side down. Sprinkle a little cheese over one half and spread a quarter of the beef mixture on top. Scatter some spring onions,
+                            jalepenos and cheese on top before folding over the tortilla.<br> Repeat for the remaining tortillas
+                        Brush one side of the 2 remaining tortillas with oil and place on top of the beef filling, oiled side up. <br>Press them down firmly and place on the two hightest shelves of the oven for 10-15 minutes, or until golden brown.<br>
+                        While quesadillas are cooking mix all the salsa ingredients in a bowl and season to taste.<br>
+                        Remove the quesadillas from the oven and cut into wedges before serving with a dollop of sour cream and some salsa on the side.</p></span>
+
+
+                        <div><button type="button" onclick='display()' id="button">Read more</button></div>
+                </div>
+            </div>
+        </div>
+
     </div>
-    <div class="steps_list">
-        <ol>
-            <h3>Steps</h3>
-            <li>Preheat the oven to 220 degrees celsius and line two large baking trays with baking paper.</li>
-            <li>Place a large, non-stick frying pan over a high heat.Add the oil and onion and cook for 2-3 minutes, or until the onion has softened. Add the garlic and cook for 2 minutes., then crumble in the minced beef . Cook over a high heat for 4-5 minutes.
-                Or until mince is lightly browned.</li>
-            <li>Stir in the spices and cook for 1-2 minutes. Add the tinned tamatoes , cook for 2 minutes, then remove from the heat. Stir in the kidney beans and season to taste.</li>
-            <li>Lightly brush one side of the tortilla with extra olive oil and place on a prepared tray, oiled side down. Sprinkle a little cheese over one half and spread a quarter of the beef mixture on top. Scatter some spring onions, jalepenos and cheese
-                on top before folding over the tortilla.Repeat for the remaining tortillas</li>
-            <li>Brush one side of the 2 remaining tortillas with oil and place on top of the beef filling, oiled side up. Press them down firmly and place on the two hightest shelves of the oven for 10-15 minutes, or until golden brown. </li>
-            <li>While quesadillas are cooking mix all the salsa ingredients in a bowl and season to taste. </li>
-            <li>Remove the quesadillas from the oven and cut into wedges before serving with a dollop of sour cream and some salsa on the side.</li>
-        </ol>
-    </div>
+
     <div class="table">
         <table>
             <h3>Nutrition</h3>
@@ -89,5 +101,23 @@
         </footer>
     </div>
 </body>
+<script type="text/javascript">
+    var x = 0
+
+    function display() {
+        if (!x) {
+            document.getElementById("more").style.display = "inline";
+            document.getElementById("button").innerHTML = 'Read less';
+            x = 1;
+
+        } else {
+            document.getElementById("more").style.display = 'none';
+            document.getElementById("button").innerHTML = 'Read more';
+            x = 0;
+        }
+
+
+    }
+</script>
 
 </html>
