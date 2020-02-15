@@ -1,49 +1,64 @@
-.color {
-    width: 100%;
-    background-color: #152238;
-}
-
-.color li a {
-    color: rgb(255, 255, 255);
-    font-family: 'Rye', cursive;
-}
-
-.b-image {
-    background-image: url('../Images/food.jpg');
-    background-size: cover;
-    opacity: 93%;
-}
-
-.colorJumbo {
-    color: #152238;
-    font-family: 'Rye', cursive;
-    text-align: center;
-}
-
-body {
-    background-color: rgb(220, 220, 220);
-}
-
-#more {
-    display: none;
-}
-
-.table {
-    width: 60%;
-    display: inline-block;
-}
-
-.gram {
-    font-weight: bold;
-    color: #152238;
-}
-
-.footer ul {
-    text-align: center;
-}
-
-.footer ul li {
-    list-style-type: none;
-    display: inline-block;
-    font-family: 'Flamenco', cursive;
-}
+    .color {
+        width: 100%;
+        background-color: #152238;
+    }
+    
+    .color li a {
+        color: rgb(255, 255, 255);
+        font-family: 'Rye', cursive;
+    }
+    
+    .b-image {
+        background-image: url('../Images/jumbotron.jpg');
+        background-size: cover;
+        opacity: 50%;
+    }
+    
+    .colorJumbo {
+        color: #152238;
+        font-family: 'Rye', cursive;
+        text-align: center;
+    }
+    
+    body {
+        background-color: rgb(220, 220, 220);
+    }
+    
+    #more {
+        display: none;
+    }
+    
+    .table {
+        width: 60%;
+        display: inline-block;
+    }
+    
+    .gram {
+        font-weight: bold;
+        color: #152238;
+    }
+    
+    .footer ul {
+        text-align: center;
+    }
+    
+    .footer ul li {
+        list-style-type: none;
+        display: inline-block;
+        font-family: 'Flamenco', cursive;
+    }
+    
+    @media only screen and (max-width :600px) {
+        .b-image {
+            opacity: 0.7;
+        }
+        .colorJumbo {
+            color: rgb(0, 0, 0)
+        }
+    }
+    
+    @media only screen and (min-width:900px) {
+        .text-size {
+            font-size: 20px;
+        }
+    }
