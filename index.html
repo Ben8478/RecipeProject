@@ -2,10 +2,11 @@
 <html lang="en">
 
 <head>
-    <title>Healthy Brocoli Burst</title>
+    <title>Brocoli salad</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css?family=Rye&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Coda+Caption:800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="CSS/style.css">
 </head>
@@ -13,6 +14,7 @@
 <body>
     <header>
         <h1><img src="../recipeProject/Images/Logo.png"></h1>
+        <h2>My take on a recipe page</h2>
     </header>
     <div>
         <ul class="nav justify-content-end color">
@@ -27,17 +29,18 @@
     <div class="wrapper">
         <div class="jumbotron jumbotron-fluid b-image">
             <div class="container colorJumbo" style="height:400px;">
-                <h1 class="display-4">Delicious Brocoli salad</h1>
-                <p class="lead ptron">How to create a delicious dish in a dash</p>
+                <h1 class="display-4 colortext">Delicious Brocoli salad</h1>
+                <p class="lead ptron colortext">A fresh healty treat.</p>
             </div>
         </div>
     </div>
     <div class="container">
         <div class="row">
             <div class="col-lg-6 col-md-12">
-                <h3 class="py-2">Ingredients</h3>
                 <div>
+
                     <ul class="text-size">
+                        <h3 class="heading-font">Ingredients</h3>
                         <li>500 gram brocoli</li>
                         <li>1 Onion</li>
                         <li> 200 gram Diced Bacon</li>
@@ -52,40 +55,45 @@
                 </div>
             </div>
 
-            <div class="col-lg-6 col-md-12 align">
-                <h3 class="py-2">Steps</h3>
+            <div class="col-lg-6 col-md-12 align w-">
+                <h3 class="py-2 heading-font">Steps</h3>
                 <div>
-                    <p class="text-size">Step 1. Fry 200 grams of diced bacon in a pan until it is crispy. After frying the bacon leave it to cool down in a separate bowl.<br> Step 2. Cut broccoli into smaller pieces and place it in a mixing bowl.<br> Step 3. Dice on onion
-                        and place in the mixing bowl with the broccoli.<br> Step 4. Add 250 ml of sunflower seeds to the mix.<br>
+                    <p class="text-size"><span class="steps_bold">Step 1.</span> Fry 200 grams of diced bacon in a pan until it is crispy. After frying the bacon leave it to cool down in a separate bowl.<br><span class="steps_bold"> Step 2.</span> Cut broccoli into smaller
+                        pieces and place it in a mixing bowl.<br><span class="steps_bold"> Step 3. </span>Dice on onion and place in the mixing bowl with the broccoli.<br><span class="steps_bold">Step 4.</span> Add 250 ml of sunflower seeds to the mix.<br>
                         <span id="more">
-                            Step 5. To make the salad dressing mix together 150 ml of canola oil, 125 ml of lemon juice, 5 ml celery salt, 10 ml mustard powder and 15 ml sugar.<br>
-                            Step 6. Add the bacon and salad dressing to the mix and toss the salad.<br>
-                            Step 7. Leave the mixture in a fridge for 12 hours.<br>
-                            Step 8. Serve the salad chilled with a hand full of raisins.<br>
-                            </p></span>
+                            <span class="steps_bold" >Step 5.</span>To make the salad dressing mix together 150 ml of canola oil, 125 ml of lemon juice, 5 ml celery salt, 10 ml mustard powder and 15 ml sugar.<br>
+                        <span class="steps_bold">Step 6.</span> Add the bacon and salad dressing to the mix and toss the salad.<br>
+                        <span class="steps_bold"> Step 7.</span> Leave the mixture in a fridge for 12 hours.<br>
+                        <span class="steps_bold">Step 8.</span> Serve the salad chilled with a hand full of raisins.<br>
+                    </p>
+                    </span>
 
 
-                        <div><button type="button" onclick='display()' id="button">Read more</button></div>
+                    <div><button type="button" onclick='display()' id="button">Read more</button></div>
                 </div>
             </div>
         </div>
 
     </div>
 
-    <div class="table">
+    <div>
         <table>
-            <h3>Nutrition</h3>
+            <!-- <h3 class="heading-font heading-margin ">Nutrition</h3> -->
             <tr>
-                <th>Calories</th>
-                <th>Fat</th>
-                <th>Protein</th>
-                <th>Carbohydrates</th>
+                <th>Nutrition</th>
+
             </tr>
             <tr>
-                <td>550</td>
-                <td>30 <span class="gram">g</span></td>
-                <td>37 <span class="gram">g</span></td>
-                <td>36 <span class="gram">g</span></td>
+                <td class="table-borders">Calories</td>
+                <td class="table-borders ">Fat</td>
+                <td class="table-borders ">Protein</td>
+                <td class="table-borders">Carbohydrates</td>
+            </tr>
+            <tr>
+                <td class="table-borders ">550</td>
+                <td class="table-borders ">30 <span class="gram">g</span></td>
+                <td class="table-borders "> 37 <span class="gram">g</span></td>
+                <td class="table-borders ">36 <span class="gram">g</span></td>
             </tr>
         </table>
     </div><br><br>

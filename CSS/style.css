@@ -1,108 +1,153 @@
-  .color {
-      width: 100%;
-      background-color: #152238;
-  }
-  
-  .color li a {
-      color: rgb(255, 255, 255);
-      font-family: 'Rye', cursive;
-      text-decoration: underline;
-  }
-  
-  .b-image {
-      background-image: url('../Images/jumbotron.jpg');
-      background-size: cover;
-      opacity: 100%;
-  }
-  
-  .colorJumbo {
-      color: #152238;
-      font-family: 'Rye', cursive;
-      text-align: center;
-  }
-  
-  body {
-      background-color: rgb(220, 220, 220);
-  }
-  
-  #more {
-      display: none;
-  }
-  
-  .table {
-      border: 1px black solid;
-      margin-left: 2%;
-      width: 60%;
-      display: inline-block;
-  }
-  
-  .gram {
-      font-weight: bold;
-      color: #152238;
-  }
-  
-  .image_1 {
-      width: 30%;
-      display: inline-block;
-      margin-left: 2%;
-  }
-  
-  .image_2 {
-      width: 30%;
-      display: inline-block;
-      vertical-align: auto;
-      ;
-  }
-  
-  .image_3 {
-      width: 30%;
-      display: inline-block;
-  }
-  
-  .footer ul {
-      text-align: center;
-  }
-  
-  .footer ul li {
-      list-style-type: none;
-      display: inline-block;
-      font-family: 'Flamenco', cursive;
-  }
-  
-  @media only screen and (max-width :600px) {
-      .b-image {
-          opacity: 0.7;
-      }
-      .colorJumbo {
-          color: rgb(0, 0, 0)
-      }
-      .table {
-          width: 100%;
-      }
-  }
-  
-  @media only screen and (min-width:900px) {
-      .text-size {
-          font-size: 30px;
-      }
-      .color li a {
-          font-size: 50px;
-      }
-      .table {
-          font-size: 30px;
-      }
-  }
-  
-  @media only screen and (max-width:1300px) {
-      .image_1 {
-          display: block;
-      }
-      .image_2 {
-          display: block;
-          margin-left: 2%;
-      }
-      .image_3 {
-          display: block;
-          margin-left: 2%;
-      }
-  }
+h1 {
+    display: inline-block;
+}
+
+h2 {
+    display: inline-block;
+    color: #152238;
+    font-family: 'Coda Caption', sans-serif;
+}
+
+.color {
+    width: 100%;
+    background-color: #152238;
+}
+
+.color li a {
+    color: rgb(255, 255, 255);
+    font-family: 'Rye', cursive;
+    text-decoration: underline;
+}
+
+.b-image {
+    background-image: url('../Images/jumbotron.jpg');
+    background-size: cover;
+}
+
+.colorJumbo {
+    color: #152238;
+    font-family: 'Rye', cursive;
+    text-align: right;
+}
+
+body {
+    background-color: rgb(220, 220, 220);
+    color: #152238;
+}
+
+.steps_bold {
+    font-family: 'Coda Caption', sans-serif;
+}
+
+#button {
+    background-color: #152238;
+    color: rgb(220, 220, 220);
+    font-family: 'Coda Caption', sans-serif;
+}
+
+#more {
+    display: none;
+}
+
+.heading-font {
+    font-family: 'Coda Caption', sans-serif;
+}
+
+.heading-margin {
+    padding-left: 2%;
+}
+
+.table-borders {
+    border-top: 1px solid #152238;
+    border-bottom: 1px solid #152238;
+    border-left: 1px solid #152238;
+    border-right: 1px solid #152238;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+table {
+    margin-left: 2%;
+    width: 30%;
+    display: inline-block;
+}
+
+.gram {
+    font-weight: bold;
+    color: #152238;
+}
+
+.image_1 {
+    width: 30%;
+    display: inline-block;
+    margin-left: 2%;
+}
+
+.image_2 {
+    width: 30%;
+    display: inline-block;
+    vertical-align: auto;
+    ;
+}
+
+.image_3 {
+    width: 30%;
+    display: inline-block;
+}
+
+.footer ul {
+    text-align: center;
+    margin-top: 5%;
+}
+
+.footer ul li {
+    list-style-type: none;
+    display: inline-block;
+    font-family: 'Flamenco', cursive;
+}
+
+@media only screen and (max-width :1000px) {
+    .b-image {
+        opacity: 0.8;
+    }
+    .colorJumbo {
+        color: rgb(0, 0, 0);
+        text-align: center;
+        margin-top: -5%;
+    }
+    .colortext {
+        font-size: 25px;
+    }
+    .table {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width:900px) {
+    .text-size {
+        font-size: 30px;
+    }
+    .color li a {
+        font-size: 30px;
+    }
+    table {
+        font-size: 30px;
+    }
+    #button {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width:1300px) {
+    .image_1 {
+        display: block;
+    }
+    .image_2 {
+        display: block;
+        margin-left: 2%;
+    }
+    .image_3 {
+        display: block;
+        margin-left: 2%;
+    }
+}
