@@ -75,6 +75,8 @@ body {
 
 .heading-font {
     font-family: 'Coda Caption', sans-serif;
+    font-size: 33px;
+    margin-top: 5%;
     /*aplies the google font coda caption to all elements with the class*/
 }
 
@@ -167,6 +169,10 @@ table {
     .colortext {
         font-size: 25px;
         /*decreases the font size to increase readibility*/
+    }
+    table {
+        margin-left: 8%;
+        /*increases margin to improve styling*/
     }
 }
 
