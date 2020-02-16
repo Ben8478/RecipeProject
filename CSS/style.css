@@ -1,133 +1,182 @@
 h1 {
+    /*targeting the h1 within the semantic tag "header"*/
     display: inline-block;
+    /*set the element to display inline with a following element*/
 }
 
 h2 {
+    /*Targets the h2 element nested within the header */
     display: inline-block;
+    /*sets the image property to diplay inline with the previous element*/
     color: #152238;
+    /* sets the color of the text within h2 to the color represented by the hex code #152238*/
     font-family: 'Coda Caption', sans-serif;
+    /*sets the font of the heading to */
 }
 
 .color {
     width: 100%;
+    /*sets the width of the nav element to 100%*/
     background-color: #152238;
+    /*sets the color for the nav heading*/
 }
 
 .color li a {
+    /* Targets the list within the nav element more specifically the links.*/
     color: rgb(255, 255, 255);
+    /* sets the color of the links contained within the list to white*/
     font-family: 'Rye', cursive;
+    /*sets the font of the list items to the google font rye with cursive as a backup if the browser does not support the font*/
     text-decoration: underline;
+    /*underlines the list items*/
 }
 
 .b-image {
     background-image: url('../Images/jumbotron.jpg');
+    /* sets the image for the jumbotron imported from bootstrap*/
     background-size: cover;
+    /*lets the image cover the entire width of the jumbotron*/
 }
 
 .colorJumbo {
     color: #152238;
+    /*Sets the color for the text of the jumbotron*/
     font-family: 'Rye', cursive;
+    /*sets the font for the text of the jumbotron to the google font rye*/
     text-align: right;
+    /*Aligns the text for the jumbotron to the right*/
 }
 
 body {
     background-color: rgb(220, 220, 220);
+    /*Sets the color for the body background to a light grey*/
     color: #152238;
+    /*sets the body text color to the hex code of #152238*/
 }
 
 .steps_bold {
     font-family: 'Coda Caption', sans-serif;
+    /*changes all elements classed with steps_bold to the google font coda caption */
 }
 
 #button {
     background-color: #152238;
+    /*sets the background color of the button to the hex code #152238*/
     color: rgb(220, 220, 220);
+    /*sets the color for the text inside the button to a light grey*/
     font-family: 'Coda Caption', sans-serif;
+    /*sets the font to the google font coda caption inside the button*/
 }
 
 #more {
     display: none;
+    /*sets the spanned off text to not display when the button is not pressed*/
 }
 
 .heading-font {
     font-family: 'Coda Caption', sans-serif;
+    /*aplies the google font coda caption to all elements with the class*/
 }
 
 .heading-margin {
     padding-left: 2%;
+    /*sets a class for headings that require more padding to the left*/
 }
 
 .table-borders {
     border-top: 1px solid #152238;
+    /*sets the table borders for table items*/
     border-bottom: 1px solid #152238;
     border-left: 1px solid #152238;
     border-right: 1px solid #152238;
     padding-left: 3%;
+    /*sets padding for the table items*/
     padding-right: 3%;
 }
 
 table {
+    margin-top: 2%;
+    /*sets the margin for the whole table*/
     margin-left: 2%;
     width: 30%;
+    /*sets the width fot the whole table*/
     display: inline-block;
+    /*sets the table to display inline block with following elements*/
 }
 
 .gram {
     font-weight: bold;
+    /*sets the text style to bold for elements targeted with gram*/
     color: #152238;
+    /*sets color to #152238 for items containing gram class*/
 }
 
 .image_1 {
     width: 30%;
+    /*sets the image width to 30%*/
     display: inline-block;
+    /*sets the image to diplsay inline with the following and preious image*/
     margin-left: 2%;
+    /*sets the left image margin to 2% TO Allow image to be in line with the text*/
 }
 
 .image_2 {
     width: 30%;
+    /*sets the image width to 30%*/
     display: inline-block;
+    /*sets the image to diplsay inline with the following and preious image*/
     vertical-align: auto;
     ;
 }
 
 .image_3 {
     width: 30%;
+    /*sets the image width to 30%*/
     display: inline-block;
+    /*sets the image to diplsay inline with the following and preious image*/
 }
 
 .footer ul {
     text-align: center;
+    /*aligns the text within the footer to the left*/
     margin-top: 5%;
+    /*sets the top margin to % to create space between images and footer*/
 }
 
 .footer ul li {
     list-style-type: none;
+    /*removes any list style*/
     display: inline-block;
-    font-family: 'Flamenco', cursive;
+    /*sets list items to diplay inline with one another*/
 }
 
 @media only screen and (max-width :1000px) {
+    /*This media querie steps in a soon as the width is more than 1000px*/
     .b-image {
         opacity: 0.8;
+        /*the opacity removes color from the background and makes the content more readible on the jumbotron*/
     }
     .colorJumbo {
         color: rgb(0, 0, 0);
+        /*This changes the color to black to make the content more readible*/
         text-align: center;
+        /*text is centered to increase readibility*/
         margin-top: -5%;
+        /*decreases the margin to the top*/
     }
     .colortext {
         font-size: 25px;
-    }
-    .table {
-        width: 100%;
+        /*decreases the font size to increase readibility*/
     }
 }
 
 @media only screen and (min-width:900px) {
+    /*This media querie is implemented when the screen size is greater than 900px*/
     .text-size {
         font-size: 30px;
     }
     .color li a {
+        /*size is increase for readibility*/
         font-size: 30px;
     }
     table {
@@ -139,9 +188,11 @@ table {
 }
 
 @media only screen and (max-width:1300px) {
+    /*this media querie is implemented once the screen is smaller than 1300px*/
     .image_1 {
         display: block;
     }
+    /*images are set to block to break and accomodate a smaller screen*/
     .image_2 {
         display: block;
         margin-left: 2%;
