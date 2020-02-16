@@ -91,16 +91,15 @@ body {
     border-bottom: 1px solid #152238;
     border-left: 1px solid #152238;
     border-right: 1px solid #152238;
-    padding-left: 3%;
+    padding-left: 5%;
     /*sets padding for the table items*/
-    padding-right: 3%;
+    padding-right: 5%;
 }
 
 table {
     margin-top: 5%;
     /*sets the margin for the whole table*/
     margin-left: 2%;
-    width: 30%;
     /*sets the width fot the whole table*/
     display: inline-block;
     /*sets the table to display inline block with following elements*/
