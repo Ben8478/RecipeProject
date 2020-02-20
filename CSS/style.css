@@ -10,7 +10,7 @@ h2 {
     /*sets the image property to diplay inline with the previous element*/
     color: #152238;
     /* sets the color of the text within h2 to the color represented by the hex code #152238*/
-    font-family: 'Coda Caption', sans-serif;
+    font-family: 'Open Sans Condensed', sans-serif;
     /*sets the font of the heading to */
 }
 
@@ -25,25 +25,27 @@ h2 {
     /* Targets the list within the nav element more specifically the links.*/
     color: rgb(255, 255, 255);
     /* sets the color of the links contained within the list to white*/
-    font-family: 'Rye', cursive;
+    font-family: 'Open Sans Condensed', sans-serif;
     /*sets the font of the list items to the google font rye with cursive as a backup if the browser does not support the font*/
     text-decoration: underline;
     /*underlines the list items*/
+    font-size: 30px;
 }
 
 .b-image {
-    background-image: url('../Images/jumbotron.jpg');
+    background-image: url('/images/jumbotron2.jpg');
     /* sets the image for the jumbotron imported from bootstrap*/
     background-size: cover;
     /*lets the image cover the entire width of the jumbotron*/
 }
 
 .colorJumbo {
-    color: #152238;
+    color: rgb(220, 220, 220);
     /*Sets the color for the text of the jumbotron*/
-    font-family: 'Rye', cursive;
+    font-family: 'Open Sans Condensed', sans-serif;
     /*sets the font for the text of the jumbotron to the google font rye*/
     text-align: right;
+    margin-right: -0.5%;
     /*Aligns the text for the jumbotron to the right*/
 }
 
@@ -54,17 +56,23 @@ body {
     /*sets the body text color to the hex code of #152238*/
 }
 
-.steps_bold {
-    font-family: 'Coda Caption', sans-serif;
-    /*changes all elements classed with steps_bold to the google font coda caption */
+.ingredients_body {
+    background-color: rgb(209, 206, 206);
 }
+
+.steps_body {
+    background-color: rgb(209, 206, 206);
+}
+
+
+/*changes all elements classed with steps_bold to the google font coda caption */
 
 #button {
     background-color: #152238;
     /*sets the background color of the button to the hex code #152238*/
     color: rgb(220, 220, 220);
     /*sets the color for the text inside the button to a light grey*/
-    font-family: 'Coda Caption', sans-serif;
+    font-family: 'Open Sans Condensed', sans-serif;
     /*sets the font to the google font coda caption inside the button*/
 }
 
@@ -74,7 +82,7 @@ body {
 }
 
 .heading-font {
-    font-family: 'Coda Caption', sans-serif;
+    font-family: 'Open Sans Condensed', sans-serif;
     font-size: 33px;
     margin-top: 5%;
     /*aplies the google font coda caption to all elements with the class*/
@@ -96,13 +104,16 @@ body {
     padding-right: 5%;
 }
 
-table {
+.table {
+    margin-left: 7%;
+    margin-right: 7%;
+}
+
+.tableh {
+    text-align: center;
     margin-top: 5%;
-    /*sets the margin for the whole table*/
-    margin-left: 2%;
-    /*sets the width fot the whole table*/
-    display: inline-block;
-    /*sets the table to display inline block with following elements*/
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .gram {
@@ -127,6 +138,7 @@ table {
     display: inline-block;
     /*sets the image to diplsay inline with the following and preious image*/
     vertical-align: auto;
+    margin-left: 2%;
     ;
 }
 
@@ -135,18 +147,22 @@ table {
     /*sets the image width to 30%*/
     display: inline-block;
     /*sets the image to diplsay inline with the following and preious image*/
+    margin-left: 2%;
 }
 
 .footer ul {
     text-align: center;
     /*aligns the text within the footer to the left*/
     margin-top: 5%;
+    background-color: #152238;
     /*sets the top margin to % to create space between images and footer*/
+    color: rgb(220, 220, 220);
 }
 
 .footer ul li {
     list-style-type: none;
     /*removes any list style*/
+    color: rgb(220, 220, 220);
     display: inline-block;
     /*sets list items to diplay inline with one another*/
 }
@@ -154,56 +170,65 @@ table {
 @media only screen and (max-width :1000px) {
     /*This media querie steps in a soon as the width is more than 1000px*/
     .b-image {
-        opacity: 0.8;
+        opacity: 0.9;
         /*the opacity removes color from the background and makes the content more readible on the jumbotron*/
     }
     .colorJumbo {
-        color: rgb(0, 0, 0);
+        color: rgb(220, 220, 220);
         /*This changes the color to black to make the content more readible*/
-        text-align: center;
+        text-align: right;
         /*text is centered to increase readibility*/
         margin-top: -5%;
         /*decreases the margin to the top*/
     }
-    .colortext {
-        font-size: 25px;
-        /*decreases the font size to increase readibility*/
-    }
-    table {
-        margin-left: 8%;
-        /*increases margin to improve styling*/
-    }
+    /*decreases the font size to increase readibility*/
 }
 
+
+/*increases margin to improve styling*/
+
+
+}
 @media only screen and (min-width:900px) {
     /*This media querie is implemented when the screen size is greater than 900px*/
+    
     .text-size {
         font-size: 30px;
     }
+    
     .color li a {
         /*size is increase for readibility*/
-        font-size: 30px;
+        font-size: 40px;
     }
+    
     table {
-        font-size: 30px;
+        font-size: 40px;
     }
+    
     #button {
-        font-size: 30px;
+        font-size: 40px;
+    }
+    
+    .tableh {
+        font-size: 40px;
     }
 }
-
 @media only screen and (max-width:1300px) {
     /*this media querie is implemented once the screen is smaller than 1300px*/
+    
     .image_1 {
         display: block;
+        margin-left: 10%;
     }
     /*images are set to block to break and accomodate a smaller screen*/
+    
     .image_2 {
         display: block;
-        margin-left: 2%;
+        margin-left: 10%;
     }
+    
     .image_3 {
         display: block;
-        margin-left: 2%;
+        margin-left: 10%;
     }
 }

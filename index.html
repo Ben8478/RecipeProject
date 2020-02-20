@@ -8,7 +8,7 @@
     <title>Brocoli salad</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="https://fonts.googleapis.com/css?family=Rye&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Coda+Caption:800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="CSS/style.css">
@@ -18,7 +18,7 @@
     <!--contains all elements situated in the body-->
     <header>
         <!--the semantic element descibes that this is a header and therefore improves browser readibility-->
-        <h1><img src="../recipeProject/Images/Logo.png" alt="Logo" title="My Logo"></h1>
+        <h1><img src="images/Logo.png" alt="Logo" title="My Logo"></h1>
         <!--the image that displays the logo at the top of the page in the header-->
         <h2>A family favourite recipe</h2>
         <!--a header that is less prominent than the h1 element-->
@@ -36,7 +36,7 @@
     </div>
     <div class="wrapper">
         <!--a div containing a jumbotron imported from bootstrap-->
-        <div class="jumbotron jumbotron-fluid b-image">
+        <div class="jumbotron jumbotron-fluid b-image" style="background-image:url(images/jumbotron2.jpg);">
             <!--the main div which in which al other elements are nested-->
             <div class="container colorJumbo" style="height:400px;">
                 <!--the container size is specified as 400px-->
@@ -50,7 +50,7 @@
     <div class="container">
         <!---two columns are imported from bootstrap to ease the process of creating responsive content-->
         <div class="row">
-            <div class="col-lg-6 col-md-12">
+            <div class="col-lg-6 col-md-12 ingredients_body">
                 <!--two large columns are used , six is used at the end because when the two columns are added up it should be equal to twelve-->
                 <div>
                     <ul class="text-size">
@@ -68,55 +68,49 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-lg-6 col-md-12 ">
+            <div class="col-lg-6 col-md-12 steps_body">
                 <h3 class="py-2 heading-font">Steps</h3>
                 <!--a h3 heading is used as it is less prominent than the h1 and h2 headings-->
                 <div>
                     <!--this div contains a paragraph with steps on how to make the recipe-->
-                    <p class="text-size"><span class="steps_bold">Step 1.</span> Fry 200 grams of diced bacon in a pan until it is crispy. After frying the bacon leave it to cool down in a separate bowl.<br><span class="steps_bold"> Step 2.</span> Cut broccoli into smaller
-                        pieces and place it in a mixing bowl.<br><span class="steps_bold"> Step 3. </span>Dice one onion and place in the mixing bowl with the broccoli.<br><span class="steps_bold">Step 4.</span> Add 250 ml of sunflower seeds to the mix.
+                    <p class="text-size"><strong>Step 1.</strong> Fry 200 grams of diced bacon in a pan until it is crispy. After frying the bacon leave it to cool down in a separate bowl.<br><strong>Step 2.</strong> Cut broccoli into smaller pieces and place it in a mixing
+                        bowl.
+                        <br><strong>Step 3.</strong>Dice one onion and place in the mixing bowl with the broccoli.<br><strong>Step 4.</strong> Add 250 ml of sunflower seeds to the mix.
                         <br>
                         <!--the br element creates a line break to seperate line items than span tag is used to target a specific part of the text-->
                         <span id="more"><!-- this span tag targets the content that is displayed whn the read more button is clicked-->
-                            <span class="steps_bold" >Step 5.</span>To make the salad dressing mix together 150 ml of canola oil, 125 ml of lemon juice, 5 ml celery salt, 10 ml mustard powder and 15 ml sugar.<br>
-                        <span class="steps_bold">Step 6.</span> Add the bacon and salad dressing to the mix and toss the salad.<br>
-                        <span class="steps_bold"> Step 7.</span> Leave the mixture in a fridge for 12 hours.<br>
-                        <span class="steps_bold">Step 8.</span> Serve the salad chilled with a hand full of raisins.<br>
+                            <strong>Step 5.</strong>To make the salad dressing mix together 150 ml of canola oil, 125 ml of lemon juice, 5 ml celery salt, 10 ml mustard powder and 15 ml sugar.<br>
+                        <strong>Step 6.</strong>sAdd the bacon and salad dressing to the mix and toss the salad.<br>
+                        <strong>Step 7.</strong> Leave the mixture in a fridge for 12 hours.<br>
+                        <strong>Step 8.</strong> Serve the salad chilled with a hand full of raisins.<br>
                     </p>
                     </span>
-                    <div><button type="button" onclick='display()' id="button">Read more</button></div>
-                    <!-- this button executes the display function when clicked-->
+                        <div><button type="button" onclick='display()' id="button">Read more</button></div>
+                        <!-- this button executes the display function when clicked-->
                 </div>
             </div>
         </div>
     </div>
-    <div>
-        <table>
-            <col width="130">
-            <!--column width is set to fit all attributes-->
-            <col width="130">
-            <col width="130">
-            <col width="250">
-            <!-- a table is created to neately display the nutritional info-->
-            <tr>
-                <th class="steps_bold">Nutrition</th>
-                <!--this contains the main heading for the table-->
-
-            </tr>
-            <tr>
-                <!--this table row displayes the main catagories for the data-->
-                <td class="table-borders">Calories</td>
-                <td class="table-borders">Fat</td>
-                <td class="table-borders">Protein</td>
-                <td class="table-borders">Carbohydrates</td>
-            </tr>
-            <tr>
-                <!--this row displays the data required for the catagories-->
-                <td class="table-borders">2465</td>
-                <td class="table-borders">101.1<span class="gram">g</span></td>
-                <td class="table-borders"> 138.3<span class="gram">g</span></td>
-                <td class="table-borders">262.8<span class="gram">g</span></td>
-            </tr>
+    <div class="tablewrap">
+        <table class="table">
+            <thead>
+                <h4 class="tableh"><strong>Nutrition</strong></h4>
+                <tr>
+                    <th scope="col">Calories</th>
+                    <th scope="col">Fat</th>
+                    <th scope="col">protein</th>
+                    <th scope="col">Carbohydrates</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>2465</th>
+                    <td>101.1 g</td>
+                    <td>138.3 g</td>
+                    <td>262.8 g</td>
+                </tr>
+            </tbody>
+        </table>
         </table>
     </div><br><br>
     <!-- the br element creates a break to ensure the images start on the next line-->
@@ -143,24 +137,25 @@
             </ul>
         </footer>
     </div>
-</body>
-<script type="text/javascript">
-    //a tag  that specifies that javascriot code is going to be used
-    var x = 0 //sets the original value of x equal to zero
+    <script type="text/javascript">
+        //a tag  that specifies that javascriot code is going to be used
+        var x = 0 //sets the original value of x equal to zero
 
-    function display() { // creates a function "display "
-        if (!x) { // this specifies that if x equal to zero is true execute the underlying code
-            document.getElementById("more").style.display = "inline"; // this fetches the element moreText and displays it inline
-            document.getElementById("button").innerHTML = 'Read less'; // this command changes the inner text of the button 
-            x = 1; //this sets the value of x to 1 to execute the else statement
-        } else { // if x is nor equal to 0 this code is executed 
-            document.getElementById("more").style.display = 'none'; //this command hides the text again
-            document.getElementById("button").innerHTML = 'Read more'; //this command once more changes the inner text of the button
-            x = 0; //x is set equal to 0 to ensure that the if statement executes
+        function display() { // creates a function "display "
+            if (!x) { // this specifies that if x equal to zero is true execute the underlying code
+                document.getElementById("more").style.display = "inline"; // this fetches the element moreText and displays it inline
+                document.getElementById("button").innerHTML = 'Read less'; // this command changes the inner text of the button 
+                x = 1; //this sets the value of x to 1 to execute the else statement
+            } else { // if x is nor equal to 0 this code is executed 
+                document.getElementById("more").style.display = 'none'; //this command hides the text again
+                document.getElementById("button").innerHTML = 'Read more'; //this command once more changes the inner text of the button
+                x = 0; //x is set equal to 0 to ensure that the if statement executes
+            }
+
+
         }
+    </script>
+</body>
 
-
-    }
-</script>
 
 </html>
