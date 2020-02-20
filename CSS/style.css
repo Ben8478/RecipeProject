@@ -260,7 +260,6 @@ body {
     }
     
     .table-dark {
-        margin-left: 1%;
-        width: 98%;
+        width: 100%;
     }
 }
