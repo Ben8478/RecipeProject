@@ -250,17 +250,20 @@ body {
     .image_1 {
         display: block;
         margin-left: 2%;
+        margin-top: 1%;
     }
     /*images are set to block to break and accomodate a smaller screen*/
     
     .image_2 {
         display: block;
         margin-left: 2%;
+        margin-top: 1%;
     }
     
     .image_3 {
         display: block;
         margin-left: 2%;
+        margin-top: 1%;
     }
     
     .table-dark {
