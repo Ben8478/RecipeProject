@@ -49,6 +49,15 @@ h2 {
     /*Aligns the text for the jumbotron to the right*/
 }
 
+.h3_background {
+    background-color: #152238;
+    color: rgb(209, 206, 206);
+    text-align: center;
+    font-family: 'Open Sans Condensed', sans-serif;
+    margin-top: -2%;
+    font-size: 35px;
+}
+
 body {
     background-color: rgb(220, 220, 220);
     /*Sets the color for the body background to a light grey*/
@@ -73,6 +82,9 @@ body {
     color: rgb(220, 220, 220);
     /*sets the color for the text inside the button to a light grey*/
     font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 20px;
+    border: #152238;
+    border-radius: 5%;
     /*sets the font to the google font coda caption inside the button*/
 }
 
@@ -83,7 +95,7 @@ body {
 
 .heading-font {
     font-family: 'Open Sans Condensed', sans-serif;
-    font-size: 33px;
+    font-size: 40px;
     margin-top: 5%;
     /*aplies the google font coda caption to all elements with the class*/
 }
@@ -91,6 +103,10 @@ body {
 .heading-margin {
     padding-left: 2%;
     /*sets a class for headings that require more padding to the left*/
+}
+
+.text-size {
+    font-size: 20px;
 }
 
 .table-borders {
@@ -176,9 +192,8 @@ body {
     .colorJumbo {
         color: rgb(220, 220, 220);
         /*This changes the color to black to make the content more readible*/
-        text-align: right;
+        vertical-align: text-bottom;
         /*text is centered to increase readibility*/
-        margin-top: -5%;
         /*decreases the margin to the top*/
     }
     /*decreases the font size to increase readibility*/
@@ -198,19 +213,19 @@ body {
     
     .color li a {
         /*size is increase for readibility*/
-        font-size: 40px;
+        font-size: 45px;
     }
     
     table {
-        font-size: 40px;
+        font-size: 45px;
     }
     
     #button {
-        font-size: 40px;
+        font-size: 45px;
     }
     
     .tableh {
-        font-size: 40px;
+        font-size: 45px;
     }
 }
 @media only screen and (max-width:1300px) {
