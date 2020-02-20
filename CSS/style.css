@@ -243,6 +243,10 @@ body {
     }
 }
 @media only screen and (max-width:1100px) {
+    footer {
+        width: 99%;
+    }
+    
     .image_1 {
         display: block;
         margin-left: 2%;
