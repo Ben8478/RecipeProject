@@ -1,0 +1,315 @@
+h1 {
+    /*targeting the h1 within the semantic tag "header"*/
+    display: inline-block;
+    /*set the element to display inline with a following element*/
+}
+
+h2 {
+    /*Targets the h2 element nested within the header */
+    display: inline-block;
+    /*sets the image property to diplay inline with the previous element*/
+    color: #152238;
+    /* sets the color of the text within h2 to the color represented by the hex code #152238*/
+    font-family: 'Open Sans Condensed', sans-serif;
+    /*sets the font of the heading to */
+}
+
+.color {
+    width: 100%;
+    /*sets the width of the nav element to 100%*/
+    background-color: #152238;
+    /*sets the color for the nav heading*/
+}
+
+.color li a {
+    /* Targets the list within the nav element more specifically the links.*/
+    color: rgb(255, 255, 255);
+    /* sets the color of the links contained within the list to white*/
+    font-family: 'Open Sans Condensed', sans-serif;
+    /*sets the font of the list items to the google font rye with cursive as a backup if the browser does not support the font*/
+    text-decoration: underline;
+    /*underlines the list items*/
+    font-size: 30px;
+}
+
+.b-image {
+    background-image: url('/images/jumbotron2.jpg');
+    /* sets the image for the jumbotron imported from bootstrap*/
+    background-size: cover;
+    /*lets the image cover the entire width of the jumbotron*/
+}
+
+.colorJumbo {
+    color: rgb(220, 220, 220);
+    /*Sets the color for the text of the jumbotron*/
+    font-family: 'Open Sans Condensed', sans-serif;
+    /*sets the font for the text of the jumbotron to the google font rye*/
+    text-align: right;
+    margin-right: -0.5%;
+    /*Aligns the text for the jumbotron to the right*/
+}
+
+.h3_background {
+    background-color: #152238;
+    color: rgb(209, 206, 206);
+    text-align: center;
+    font-family: 'Open Sans Condensed', sans-serif;
+    margin-top: -2%;
+    font-size: 35px;
+    padding: 1%;
+}
+
+body {
+    background-color: rgb(220, 220, 220);
+    /*Sets the color for the body background to a light grey*/
+    color: #152238;
+    /*sets the body text color to the hex code of #152238*/
+}
+
+.ingredients_body {
+    background-color: rgb(209, 206, 206);
+    margin-top: 2%;
+    padding-bottom: 2%;
+}
+
+.steps_body {
+    background-color: rgb(209, 206, 206);
+    margin-top: 2%;
+    padding-bottom: 2%;
+}
+
+
+/*changes all elements classed with steps_bold to the google font coda caption */
+
+#button {
+    background-color: #152238;
+    /*sets the background color of the button to the hex code #152238*/
+    color: rgb(220, 220, 220);
+    /*sets the color for the text inside the button to a light grey*/
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 20px;
+    border: #152238;
+    border-radius: 5%;
+    /*sets the font to the google font coda caption inside the button*/
+}
+
+#more {
+    display: none;
+    /*sets the spanned off text to not display when the button is not pressed*/
+}
+
+.heading-font {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 40px;
+    margin-top: 5%;
+    /*aplies the google font coda caption to all elements with the class*/
+}
+
+.heading-margin {
+    padding-left: 2%;
+    /*sets a class for headings that require more padding to the left*/
+}
+
+.text-size {
+    font-size: 20px;
+}
+
+.table-dark {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.tableh {
+    text-align: center;
+    margin-top: 3%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.gram {
+    font-weight: bold;
+    /*sets the text style to bold for elements targeted with gram*/
+    color: #152238;
+    /*sets color to #152238 for items containing gram class*/
+}
+
+.image_1 {
+    width: 30%;
+    /*sets the image width to 30%*/
+    display: inline-block;
+    /*sets the image to diplsay inline with the following and preious image*/
+    margin-left: 2%;
+    /*sets the left image margin to 2% TO Allow image to be in line with the text*/
+}
+
+.image_2 {
+    width: 30%;
+    /*sets the image width to 30%*/
+    display: inline-block;
+    /*sets the image to diplsay inline with the following and preious image*/
+    vertical-align: auto;
+    margin-left: 2%;
+    ;
+}
+
+.image_3 {
+    width: 30%;
+    /*sets the image width to 30%*/
+    display: inline-block;
+    /*sets the image to diplsay inline with the following and preious image*/
+    margin-left: 2%;
+}
+
+.footer ul {
+    text-align: center;
+    /*aligns the text within the footer to the left*/
+    margin-top: 5%;
+    background-color: #152238;
+    /*sets the top margin to % to create space between images and footer*/
+    color: rgb(220, 220, 220);
+}
+
+.footer ul li {
+    list-style-type: none;
+    /*removes any list style*/
+    color: rgb(220, 220, 220);
+    display: inline-block;
+    /*sets list items to diplay inline with one another*/
+}
+
+@media only screen and (max-width :1000px) {
+    /*This media querie steps in a soon as the width is more than 1000px*/
+    .b-image {
+        opacity: 0.9;
+        /*the opacity removes color from the background and makes the content more readible on the jumbotron*/
+    }
+    .colorJumbo {
+        color: rgb(220, 220, 220);
+        /*This changes the color to black to make the content more readible*/
+        vertical-align: text-bottom;
+        /*text is centered to increase readibility*/
+        /*decreases the margin to the top*/
+    }
+    /*decreases the font size to increase readibility*/
+}
+
+
+/*increases margin to improve styling*/
+
+
+}
+@media only screen and (min-width:900px) {
+    /*This media querie is implemented when the screen size is greater than 900px*/
+
+    .text-size {
+        font-size: 30px;
+    }
+
+    .color li a {
+        /*size is increase for readibility*/
+        font-size: 45px;
+    }
+
+    table {
+        font-size: 45px;
+    }
+
+    #button {
+        font-size: 45px;
+    }
+
+    .tableh {
+        font-size: 45px;
+    }
+}
+@media only screen and (max-width:1300px) {
+    /*this media querie is implemented once the screen is smaller than 1300px*/
+
+    .image_1 {
+        display: block;
+        margin-left:0 auto;
+        margin-right: 0 auto;
+    }
+    /*images are set to block to break and accomodate a smaller screen*/
+
+    .image_2 {
+        display: block;
+        margin-left:0 auto;
+        margin-right: 0 auto;
+    }
+
+    .image_3 {
+        display: block;
+        margin-left:0 auto;
+        margin-right: 0 auto;
+    }
+}
+@media only screen and (max-width:1300px) {
+    footer {
+        width: 99%;
+    }
+
+    .image_1 {
+        display: block;
+        margin-left:auto;
+        margin-right:  auto;
+        margin-top: 1%;
+        width:50%;
+    }
+    /*images are set to block to break and accomodate a smaller screen*/
+
+    .image_2 {
+        display: block;
+        margin-left: auto;
+        margin-right:  auto;
+        margin-top: 1%;
+        width:50%;
+    }
+
+    .image_3 {
+        display: block;
+        margin-left: auto;
+        margin-right:  auto;
+        margin-top: 1%;
+        width:50%;
+    }
+
+    .table-dark {
+        margin-right: auto;
+        margin-left: auto;
+        width: 99%;
+    }
+}
+@media only screen and (max-width:600px) { 
+    footer {
+        width: 99%;
+    }
+
+    .image_1 {
+        display: block;
+        margin-top: 1%;
+       margin-left: 5%;
+    }
+    /*images are set to block to break and accomodate a smaller screen*/
+
+    .image_2 {
+        display: block;
+        margin-top: 1%;
+        margin-left: 5%;
+        
+    }
+
+    .image_3 {
+        display: block;
+        margin-top: 1%;
+        margin-left: 5%;
+       
+    }
+
+    .table-dark {
+        margin-right: auto;
+        margin-left: auto;
+        width: 99%;
+    }
+}
