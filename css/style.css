@@ -33,7 +33,7 @@ h2 {
 }
 
 .b-image {
-    background-image: url('/images/jumbotron2.jpg');
+    background-image: url('../images/jumbotron2.jpg');
     /* sets the image for the jumbotron imported from bootstrap*/
     background-size: cover;
     /*lets the image cover the entire width of the jumbotron*/
@@ -201,47 +201,47 @@ body {
 }
 @media only screen and (min-width:900px) {
     /*This media querie is implemented when the screen size is greater than 900px*/
-
+    
     .text-size {
         font-size: 30px;
     }
-
+    
     .color li a {
         /*size is increase for readibility*/
         font-size: 45px;
     }
-
+    
     table {
         font-size: 45px;
     }
-
+    
     #button {
         font-size: 45px;
     }
-
+    
     .tableh {
         font-size: 45px;
     }
 }
 @media only screen and (max-width:1300px) {
     /*this media querie is implemented once the screen is smaller than 1300px*/
-
+    
     .image_1 {
         display: block;
-        margin-left:0 auto;
+        margin-left: 0 auto;
         margin-right: 0 auto;
     }
     /*images are set to block to break and accomodate a smaller screen*/
-
+    
     .image_2 {
         display: block;
-        margin-left:0 auto;
+        margin-left: 0 auto;
         margin-right: 0 auto;
     }
-
+    
     .image_3 {
         display: block;
-        margin-left:0 auto;
+        margin-left: 0 auto;
         margin-right: 0 auto;
     }
 }
@@ -249,64 +249,62 @@ body {
     footer {
         width: 99%;
     }
-
+    
     .image_1 {
         display: block;
-        margin-left:auto;
-        margin-right:  auto;
+        margin-left: auto;
+        margin-right: auto;
         margin-top: 1%;
-        width:50%;
+        width: 50%;
     }
     /*images are set to block to break and accomodate a smaller screen*/
-
+    
     .image_2 {
         display: block;
         margin-left: auto;
-        margin-right:  auto;
+        margin-right: auto;
         margin-top: 1%;
-        width:50%;
+        width: 50%;
     }
-
+    
     .image_3 {
         display: block;
         margin-left: auto;
-        margin-right:  auto;
+        margin-right: auto;
         margin-top: 1%;
-        width:50%;
+        width: 50%;
     }
-
+    
     .table-dark {
         margin-right: auto;
         margin-left: auto;
         width: 99%;
     }
 }
-@media only screen and (max-width:600px) { 
+@media only screen and (max-width:600px) {
     footer {
         width: 99%;
     }
-
+    
     .image_1 {
         display: block;
         margin-top: 1%;
-       margin-left: 5%;
+        margin-left: 5%;
     }
     /*images are set to block to break and accomodate a smaller screen*/
-
+    
     .image_2 {
         display: block;
         margin-top: 1%;
         margin-left: 5%;
-        
     }
-
+    
     .image_3 {
         display: block;
         margin-top: 1%;
         margin-left: 5%;
-       
     }
-
+    
     .table-dark {
         margin-right: auto;
         margin-left: auto;
