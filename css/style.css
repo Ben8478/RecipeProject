@@ -33,7 +33,7 @@ h2 {
 }
 
 .b-image {
-    background-image: url('../images/jumbotron2.jpg');
+    background-image: url('images/jumbotron2.jpg');
     /* sets the image for the jumbotron imported from bootstrap*/
     background-size: cover;
     /*lets the image cover the entire width of the jumbotron*/
