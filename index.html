@@ -23,122 +23,124 @@
         <h2>A family favourite recipe</h2>
         <!--a header that is less prominent than the h1 element-->
     </header>
-    <div>
-        <!--a div containing the navigation bar element imported from bootstrap  in the form of an unordered list-->
-        <ul class="nav justify-content-end color">
-            <li class="nav-item">
-                <a class="nav-link" href="#contact_us">Follow us</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="https://www.food24.com/Recipes-and-Menus">More recipes</a>
-            </li>
-        </ul>
-    </div>
-    <div class="wrapper">
-        <!--a div containing a jumbotron imported from bootstrap-->
-        <div class="jumbotron jumbotron-fluid b-image" style="background-image:url(images/jumbotron2.jpg);">
-            <!--the main div which in which al other elements are nested-->
-            <div class="container colorJumbo" style="height:400px;">
-                <!--the container size is specified as 400px-->
-                <h1 class="display-4 colortext" style="font-size: 70px;">Delicious Broccoli salad</h1>
-                <!--a h1 element containing the main idea for the web page-->
-                <p class="lead ptron colortext" style="font-size: 60px;">A fresh healthy treat.</p>
-                <!--a paragraph containing a sc=hort desciption-->
-            </div>
+    <div class="container-fluid">
+        <div>
+            <!--a div containing the navigation bar element imported from bootstrap  in the form of an unordered list-->
+            <ul class="nav justify-content-end color">
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact_us">Follow us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.food24.com/Recipes-and-Menus">More recipes</a>
+                </li>
+            </ul>
         </div>
-    </div>
-    <div class="h3_background">
-        <h3>How to make a delicious broccoli salad</h3>
-    </div>
-    <div class="container ">
-        <!---two columns are imported from bootstrap to ease the process of creating responsive content-->
-        <div class="row">
-            <div class="col-lg-6 col-md-12 ingredients_body">
-                <!--two large columns are used , six is used at the end because when the two columns are added up it should be equal to twelve-->
-                <div>
-                    <ul>
-                        <!--a unordered list contianing the incredients for the reccipe-->
-                        <h3 class="heading-font"><strong>Ingredients</strong></h3>
-                        <li class="text-size">500g Broccoli</li>
-                        <li class="text-size">1 Onion</li>
-                        <li class="text-size"> 200g Diced bacon</li>
-                        <li class="text-size">250ml Sunflower seeds</li>
-                        <li class="text-size">250g Pitted raisens</li>
-                        <li class="text-size">125ml Lemon juice</li>
-                        <li class="text-size">15ml Sugar</li>
-                        <li class="text-size">5ml Celery salt</li>
-                        <li class="text-size">10ml Mustard powder</li>
-                    </ul>
+        <div class="wrapper">
+            <!--a div containing a jumbotron imported from bootstrap-->
+            <div class="jumbotron jumbotron-fluid b-image" style="background-image:url(images/jumbotron2.jpg);">
+                <!--the main div which in which al other elements are nested-->
+                <div class="container colorJumbo" style="height:400px;">
+                    <!--the container size is specified as 400px-->
+                    <h1 class="display-4 colortext" style="font-size: 70px;">Delicious Broccoli salad</h1>
+                    <!--a h1 element containing the main idea for the web page-->
+                    <p class="lead ptron colortext" style="font-size: 60px;">A fresh healthy treat.</p>
+                    <!--a paragraph containing a sc=hort desciption-->
                 </div>
             </div>
-            <div class="col-lg-6 col-md-12 steps_body">
-                <h3 class="py-2 heading-font"><strong>Steps</strong></h3>
-                <!--a h3 heading is used as it is less prominent than the h1 and h2 headings-->
-                <div>
-                    <!--this div contains a paragraph with steps on how to make the recipe-->
-                    <p class="text-size"><strong>Step 1.</strong> Fry 200 grams of diced bacon in a pan until it is crispy. After frying the bacon leave it to cool down in a separate bowl.<br><strong>Step 2.</strong> Cut broccoli into smaller pieces and place it in a mixing
-                        bowl.
-                        <br><strong>Step 3.</strong>Dice one onion and place in the mixing bowl with the broccoli.<br><strong>Step 4.</strong> Add 250 ml of sunflower seeds to the mix.
-                        <br>
-                        <!--the br element creates a line break to seperate line items than span tag is used to target a specific part of the text-->
-                        <span id="more"><!-- this span tag targets the content that is displayed whn the read more button is clicked-->
+        </div>
+        <div class="h3_background">
+            <h3>How to make a delicious broccoli salad</h3>
+        </div>
+        <div class="container ">
+            <!---two columns are imported from bootstrap to ease the process of creating responsive content-->
+            <div class="row">
+                <div class="col-lg-6 col-md-12 ingredients_body">
+                    <!--two large columns are used , six is used at the end because when the two columns are added up it should be equal to twelve-->
+                    <div>
+                        <ul>
+                            <!--a unordered list contianing the incredients for the reccipe-->
+                            <h3 class="heading-font"><strong>Ingredients</strong></h3>
+                            <li class="text-size">500g Broccoli</li>
+                            <li class="text-size">1 Onion</li>
+                            <li class="text-size"> 200g Diced bacon</li>
+                            <li class="text-size">250ml Sunflower seeds</li>
+                            <li class="text-size">250g Pitted raisens</li>
+                            <li class="text-size">125ml Lemon juice</li>
+                            <li class="text-size">15ml Sugar</li>
+                            <li class="text-size">5ml Celery salt</li>
+                            <li class="text-size">10ml Mustard powder</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 steps_body">
+                    <h3 class="py-2 heading-font"><strong>Steps</strong></h3>
+                    <!--a h3 heading is used as it is less prominent than the h1 and h2 headings-->
+                    <div>
+                        <!--this div contains a paragraph with steps on how to make the recipe-->
+                        <p class="text-size"><strong>Step 1.</strong> Fry 200 grams of diced bacon in a pan until it is crispy. After frying the bacon leave it to cool down in a separate bowl.<br><strong>Step 2.</strong> Cut broccoli into smaller pieces and place it in a
+                            mixing bowl.
+                            <br><strong>Step 3.</strong>Dice one onion and place in the mixing bowl with the broccoli.<br><strong>Step 4.</strong> Add 250 ml of sunflower seeds to the mix.
+                            <br>
+                            <!--the br element creates a line break to seperate line items than span tag is used to target a specific part of the text-->
+                            <span id="more"><!-- this span tag targets the content that is displayed whn the read more button is clicked-->
                             <strong>Step 5.</strong>To make the salad dressing mix together 150 ml of canola oil, 125 ml of lemon juice, 5 ml celery salt, 10 ml mustard powder and 15 ml sugar.<br>
                         <strong>Step 6.</strong>Add the bacon and salad dressing to the mix and toss the salad.<br>
                         <strong>Step 7.</strong> Leave the mixture in a fridge for 12 hours.<br>
                         <strong>Step 8.</strong> Serve the salad chilled with a hand full of raisins.<br>
                     </p>
                     </span>
-                        <div><button type="button" onclick='display()' id="button">Read more</button></div>
-                        <!-- this button executes the display function when clicked-->
+                            <div><button type="button" onclick='display()' id="button">Read more</button></div>
+                            <!-- this button executes the display function when clicked-->
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="tablewrap ">
-        <table class="table table-dark" id="tableborder">
-            <thead>
-                <h4 class="tableh"><strong>Nutrition</strong></h4>
-                <tr>
-                    <th scope="col">Calories</th>
-                    <th scope="col" id="table-fat"> Fat </th>
-                    <th scope="col">Protein</th>
-                    <th scope="col">Carbohydrates</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th>2465</th>
-                    <td>101.1 g</td>
-                    <td>138.3 g</td>
-                    <td>262.8 g</td>
-                </tr>
-            </tbody>
-        </table>
-        </table>
-    </div><br><br>
-    <!-- the br element creates a break to ensure the images start on the next line-->
-    <div class="image_1"><img src="images/in_progress.jpg" alt="a salad bowl with brocoli" title="step 2"></div>
-    <!--includes images used to showcase what the end product looks like-->
-    <div class="image_2"><img src="images/dressing.jpg" alt="salad dressing" title="salad dressing"></div>
-    <div class="image_3"><img src="images/brocoli.jpg" alt="final result" title="The delocious brocoli salad"></div>
-    <div class="footer">
-        <footer id="contact_us">
-            <!--the footer elements contains  links in photos on where to follow me on social media-->
-            <ul>
-                <h4>Follow us on </h4>
-                <li>
-                    <div>
-                        <a href="https://www.facebook.com/benchristo.dekock"><img src='images/f_logo_RGB-Blue_58.png' alt="facebook logo" title="facebook logo"></a>
-                    </div>
-                </li>
-                <!--a list containing images with links to different social media accounts-->
-                <li>
-                    <div>
-                        <a href="https://www.instagram.com/benchristo9705/"> <img src='images/IG_Glyph_Fill.png' alt="Instagram logo" title="Instagram logo"></a>
-                    </div>
-                </li>
-            </ul>
-        </footer>
+        <div class="tablewrap ">
+            <table class="table table-dark" id="tableborder">
+                <thead>
+                    <h4 class="tableh"><strong>Nutrition</strong></h4>
+                    <tr>
+                        <th scope="col">Calories</th>
+                        <th scope="col" id="table-fat"> Fat </th>
+                        <th scope="col">Protein</th>
+                        <th scope="col">Carbohydrates</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>2465</th>
+                        <td>101.1 g</td>
+                        <td>138.3 g</td>
+                        <td>262.8 g</td>
+                    </tr>
+                </tbody>
+            </table>
+            </table>
+        </div><br><br>
+        <!-- the br element creates a break to ensure the images start on the next line-->
+        <div class="image_1"><img src="images/in_progress.jpg" alt="a salad bowl with brocoli" title="step 2"></div>
+        <!--includes images used to showcase what the end product looks like-->
+        <div class="image_2"><img src="images/dressing.jpg" alt="salad dressing" title="salad dressing" class="centerImage"></div>
+        <div class="image_3"><img src="images/brocoli.jpg" alt="final result" title="The delocious brocoli salad"></div>
+        <div class="footer">
+            <footer id="contact_us">
+                <!--the footer elements contains  links in photos on where to follow me on social media-->
+                <ul>
+                    <h4>Follow us on </h4>
+                    <li>
+                        <div>
+                            <a href="https://www.facebook.com/benchristo.dekock"><img src='images/f_logo_RGB-Blue_58.png' alt="facebook logo" title="facebook logo"></a>
+                        </div>
+                    </li>
+                    <!--a list containing images with links to different social media accounts-->
+                    <li>
+                        <div>
+                            <a href="https://www.instagram.com/benchristo9705/"> <img src='images/IG_Glyph_Fill.png' alt="Instagram logo" title="Instagram logo"></a>
+                        </div>
+                    </li>
+                </ul>
+            </footer>
+        </div>
     </div>
     <script type="text/javascript">
         //a tag  that specifies that javascriot code is going to be used
