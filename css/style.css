@@ -1,3 +1,7 @@
+.headerwidth {
+    width: 98%;
+}
+
 h1 {
     /*targeting the h1 within the semantic tag "header"*/
     display: inline-block;
@@ -45,7 +49,6 @@ h2 {
     font-family: 'Open Sans Condensed', sans-serif;
     /*sets the font for the text of the jumbotron to the google font rye*/
     text-align: right;
-    margin-right: -0.5%;
     /*Aligns the text for the jumbotron to the right*/
 }
 
@@ -114,17 +117,9 @@ body {
     font-size: 20px;
 }
 
-.table-dark {
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
-}
-
 .tableh {
     text-align: center;
     margin-top: 3%;
-    margin-left: 5%;
-    margin-right: 5%;
 }
 
 .gram {
@@ -139,26 +134,11 @@ body {
     /*sets the image width to 30%*/
     display: inline-block;
     /*sets the image to diplsay inline with the following and preious image*/
-    margin-left: 2%;
     /*sets the left image margin to 2% TO Allow image to be in line with the text*/
 }
 
-.image_2 {
-    width: 30%;
-    /*sets the image width to 30%*/
-    display: inline-block;
-    /*sets the image to diplsay inline with the following and preious image*/
-    vertical-align: auto;
-    margin-left: 2%;
-    ;
-}
-
 .image_3 {
-    width: 30%;
-    /*sets the image width to 30%*/
-    display: inline-block;
-    /*sets the image to diplsay inline with the following and preious image*/
-    margin-left: 2%;
+    width: 100%;
 }
 
 .footer ul {
@@ -178,6 +158,34 @@ body {
     /*sets list items to diplay inline with one another*/
 }
 
+
+/*increases margin to improve styling*/
+
+@media only screen and (max-width:1300px) {
+    footer {
+        width: 99%;
+    }
+    .image_1 {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 1%;
+        width: 100%;
+    }
+    /*images are set to block to break and accomodate a smaller screen*/
+    .image_3 {
+        display: block;
+        margin-left: 0 auto;
+        margin-right: 0 auto;
+        width: 100%;
+    }
+}
+
+.table-dark {
+    margin-right: auto;
+    margin-left: auto;
+}
+
 @media only screen and (max-width :1000px) {
     /*This media querie steps in a soon as the width is more than 1000px*/
     .b-image {
@@ -192,122 +200,34 @@ body {
         /*decreases the margin to the top*/
     }
     /*decreases the font size to increase readibility*/
-}
-
-
-/*increases margin to improve styling*/
-
-
-}
-@media only screen and (min-width:900px) {
-    /*This media querie is implemented when the screen size is greater than 900px*/
-    
-    .text-size {
-        font-size: 30px;
-    }
-    
-    .color li a {
-        /*size is increase for readibility*/
-        font-size: 45px;
-    }
-    
-    table {
-        font-size: 45px;
-    }
-    
-    #button {
-        font-size: 45px;
-    }
-    
-    .tableh {
-        font-size: 45px;
-    }
-}
-@media only screen and (max-width:1300px) {
-    /*this media querie is implemented once the screen is smaller than 1300px*/
-    
     .image_1 {
-        display: block;
-        margin-left: 0 auto;
-        margin-right: 0 auto;
-    }
-    /*images are set to block to break and accomodate a smaller screen*/
-    
-    .image_2 {
-        display: block;
-        margin-left: 0 auto;
-        margin-right: 0 auto;
-    }
-    
-    .image_3 {
-        display: block;
-        margin-left: 0 auto;
-        margin-right: 0 auto;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
-@media only screen and (max-width:1300px) {
-    footer {
-        width: 99%;
-    }
-    
-    .image_1 {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 1%;
-        width: 50%;
-    }
-    /*images are set to block to break and accomodate a smaller screen*/
-    
-    .image_2 {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 1%;
-        width: 50%;
-    }
-    
-    .image_3 {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 1%;
-        width: 50%;
-    }
-    
-    .table-dark {
-        margin-right: auto;
-        margin-left: auto;
-        width: 99%;
-    }
-}
+
 @media only screen and (max-width:600px) {
     footer {
         width: 99%;
     }
-    
     .image_1 {
         display: block;
         margin-top: 1%;
-        margin-left: 5%;
+        width: 100%;
     }
     /*images are set to block to break and accomodate a smaller screen*/
-    
-    .image_2 {
-        display: block;
-        margin-top: 1%;
-        margin-left: 5%;
-    }
-    
     .image_3 {
-        display: block;
-        margin-top: 1%;
-        margin-left: 5%;
+        width: 100%;
     }
-    
     .table-dark {
         margin-right: auto;
         margin-left: auto;
-        width: 99%;
+    }
+}
+
+@media only screen and (min-width:1300px) {
+    .image_1 {
+        margin-left: 2%;
     }
 }
