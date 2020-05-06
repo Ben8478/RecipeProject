@@ -21,17 +21,17 @@ h2 {
 .color {
     width: 100%;
     /*sets the width of the nav element to 100%*/
-    background-color: #152238;
+    box-shadow: 0px 0px 3px 3px #152238;
     /*sets the color for the nav heading*/
+    margin-bottom: 0.3%;
 }
 
 .color li a {
     /* Targets the list within the nav element more specifically the links.*/
-    color: rgb(255, 255, 255);
+    color: #152238;
     /* sets the color of the links contained within the list to white*/
     font-family: 'Open Sans Condensed', sans-serif;
     /*sets the font of the list items to the google font rye with cursive as a backup if the browser does not support the font*/
-    text-decoration: underline;
     /*underlines the list items*/
     font-size: 30px;
 }
@@ -53,13 +53,12 @@ h2 {
 }
 
 .h3_background {
-    background-color: #152238;
-    color: rgb(209, 206, 206);
+    color: #152238;
     text-align: center;
     font-family: 'Open Sans Condensed', sans-serif;
-    margin-top: -2%;
     font-size: 35px;
     padding: 1%;
+    box-shadow: 0px 0px 1px 1px #152238;
 }
 
 body {
@@ -71,13 +70,13 @@ body {
 
 .ingredients_body {
     background-color: rgb(209, 206, 206);
-    margin-top: 2%;
+    margin-top: 0.5%;
     padding-bottom: 2%;
 }
 
 .steps_body {
     background-color: rgb(209, 206, 206);
-    margin-top: 2%;
+    margin-top: 0.6%;
     padding-bottom: 2%;
 }
 
@@ -120,6 +119,8 @@ body {
 .tableh {
     text-align: center;
     margin-top: 3%;
+    padding: 1%;
+    box-shadow: 0px 0px 1px 1px #152238;
 }
 
 .gram {
@@ -158,6 +159,14 @@ body {
     /*sets list items to diplay inline with one another*/
 }
 
+#logo {
+    text-align: center;
+}
+
+#header {
+    color: rgb(220, 220, 220);
+}
+
 
 /*increases margin to improve styling*/
 
@@ -170,7 +179,7 @@ body {
         margin-left: auto;
         margin-right: auto;
         margin-top: 1%;
-        width: 100%;
+        width: 30%;
     }
     /*images are set to block to break and accomodate a smaller screen*/
     .image_3 {
@@ -200,11 +209,11 @@ body {
         /*decreases the margin to the top*/
     }
     /*decreases the font size to increase readibility*/
-    .image_1 {
+    /* .image_1 {
         width: 80%;
         margin-left: auto;
         margin-right: auto;
-    }
+    } */
 }
 
 @media only screen and (max-width:600px) {
